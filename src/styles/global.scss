@@ -1,0 +1,38 @@
+
+@use './_variables.scss' as *;
+
+body {
+  display: flex;
+  place-items: center;
+  font-family: $font-primary;
+  font-weight: $font-light;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  color: $color-dark;
+}
+
+p {
+  color: $color-light;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h2, h5, button {
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-weight: $font-semi-bold;
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
